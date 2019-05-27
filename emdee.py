@@ -2,7 +2,7 @@
 import mechanize
 import hashlib
 
-url = 'http://docker.hackthebox.eu:57650/'
+url = 'http://docker.hackthebox.eu:57650/' #change the port
 
 b = mechanize.Browser()
 b.set_handle_robots(False) #ignore robots.txt
@@ -23,5 +23,5 @@ b.form['hash'] = encripted
 b.method = "POST"
 response = b.submit()
 
-print response.readlines() #Fl4g si inside, Look close the html
+print response.readlines() #Fl4g is inside, look close the html
 print "**code by @stormdark_ on tw**"
